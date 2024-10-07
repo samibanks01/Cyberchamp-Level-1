@@ -14,9 +14,10 @@
 </div>
 
 <h1>
-  Hey, Challenger. 
-  <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="30px"/>
-  This is the Cyber Champ battleground.
+  Hey, Challenger.
+  <br>
+    This is the Cyber Champ battleground.
+  </br>
 </h1>
 
 <div align="center">
