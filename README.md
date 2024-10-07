@@ -13,6 +13,12 @@
   <img src="https://komarev.com/ghpvc/?username=samibanks01&style=flat-square&color=blue" alt=""/>
 </div>
 
+<h1>
+  Hey, Challenger. 
+  <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="30px"/>
+  This is the Cyber Champ battleground.
+</h1>
+
 <div align="center">
   <img src="https://github.com/user-attachments/assets/10adc806-aa2e-4f13-8995-ad1bc19af446" width="600" height="300"/>
 </div>
