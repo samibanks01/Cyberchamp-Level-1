@@ -1,67 +1,151 @@
 const questions = [
     {
-        question: "1. What is the primary objective of cybersecurity? 6 remaining",
+        question: "1. Why is cybersecurity important? 14 remaining",
         answers: [
-          "To provide unlimited internet access to everyone.",
-          "To ensure the efficient operation of computer systems.",
-          "To protect information assets from unauthorized access, use, disclosure, disruption, modification, or destruction.",
-          "To create and distribute new software applications."
+          "To keep your computer running smoothly.",
+          "To protect sensitive information from unauthorized access.",
+          "To ensure all websites are accessible.",
+          "To browse the internet anonymously."
         ],
-        correctAnswer: 2 //1
+        correctAnswer: 1 //1
       },
       {
-        question: "Which element of the CIA triad focuses on ensuring information remains accurate and unaltered? 5 remaining",
+        question: "2. The CIA triad represents three key principles in information security. What does 'A' stand for? 13 remaining",
         answers: [
-          "Confidentiality",
-          "Integrity",
+          "Authentication",
           "Availability",
-          "Security"
+          "Confidentiality",
+          "Authorization"
         ],
         correctAnswer: 1 //2
       },
       {
-        question: "The ever-evolving cybersecurity landscape refers to: 4 remaining",
+        question: "3. Which of the following is NOT a core element of information security? 12 remaining",
         answers: [
-          "The constant development of new computer hardware.",
-          "The changing nature of cyber threats and vulnerabilities.",
-          "The increasing popularity of social media platforms.",
-          "The ongoing need for faster internet connection speeds."
-        ],
-        correctAnswer: 1
-      },
-      {
-        question: "Which of the following is NOT a common type of cybercrime?: 3 remaining",
-        answers: [
-          "Identity theft",
-          "Data breaches",
-          "Hardware malfunctions",
-          "Phishing scams"
+          "Confidentiality",
+          "Integrity",
+          "Redundancy",
+          "Availability"
         ],
         correctAnswer: 2
       },
       {
-        question: "Ethical hacking is a practice that involves: 2 remaining",
+        question: "4. The cybersecurity landscape is constantly evolving. What is a term used to describe malicious attempts to exploit vulnerabilities in computer systems? 11 remaining",
         answers: [
-          "Exploiting vulnerabilities in computer systems to steal data.",
-          "Identifying and reporting vulnerabilities to help organizations improve their security posture.",
-          "Spreading malware and viruses across the internet.",
-          "Creating and selling illegal software applications."
+          "Patch management",
+          "Cyber threat",
+          "Firewall",
+          "Encryption"
         ],
         correctAnswer: 1
       },
       {
-        question: "A strong password can be easily guessed and should be based on personal information like birthdays or pet names. (True/False) 1 remaining",
+        question: "5. What can be the impact of a cybercrime on a business? 10 remaining",
         answers: [
-          "True",
-          "False"
+          "Increased employee productivity",
+          "Financial losses and reputational damage",
+          "Improved customer service",
+          "Faster internet speeds"
         ],
         correctAnswer: 1
       },
       {
-        question: "Cybersecurity threats only target large corporations and have no impact on individuals. (True/False) 0 remaining",
+        question: "6. Which type of cybercrime involves tricking victims into revealing personal information? 9 remaining",
         answers: [
-          "True",
-          "False"
+          "Phishing",
+          "Malware attack",
+          "Denial-of-service attack (DoS)",
+          "Data breach"
+        ],
+        correctAnswer: 0
+      },
+      {
+        question: "7. Ethical hacking involves attempting to exploit vulnerabilities in a computer system with permission. What is another term for an ethical hacker? 8 remaining",
+        answers: [
+          "Cybercriminal",
+          "White hat hacker",
+          "Black hat hacker",
+          "Script kiddie"
+        ],
+        correctAnswer: 1
+      },
+      {
+        question: "8. What is a primary role of an ethical hacker? 7 remaining",
+        answers: [
+          "To steal data from businesses.",
+          "To identify and report security vulnerabilities.",
+          "To launch denial-of-service attacks.",
+          "To spread malware across the internet."
+        ],
+        correctAnswer: 1
+      },
+      {
+        question: "9. Which cybersecurity career path focuses on designing and implementing security measures for computer systems? 6 remaining",
+        answers: [
+          "Cybersecurity Analyst",
+          "Ethical Hacker",
+          "Security Engineer",
+          "Chief Information Security Officer (CISO)"
+        ],
+        correctAnswer: 2
+      },
+      {
+        question: "10. What skills are important for a career in cybersecurity? 5 remaining",
+        answers: [
+          "Strong communication and problem-solving skills",
+          "Ability to code in multiple programming languages",
+          "Excellent customer service skills",
+          "Experience in graphic design"
+        ],
+        correctAnswer: 0
+      },
+      {
+        question: "11. Encryption is a technique used to: 4 remaining",
+        answers: [
+          "Make data readable by authorized users.",
+          "Scramble data to make it unreadable without a key.",
+          "Slow down internet connections.",
+          "Track user activity online."
+        ],
+        correctAnswer: 1
+      },
+      {
+        question: "12. A firewall acts as a barrier between a computer network and the internet. What is its primary function? 3 remaining",
+        answers: [
+          "To block all incoming and outgoing traffic.",
+          "To filter incoming and outgoing traffic based on security rules.",
+          "To encrypt all data sent over the network.",
+          "To store user passwords securely."
+        ],
+        correctAnswer: 1
+      },
+      {
+        question: "13. What is a common social engineering tactic used by cybercriminals? 2 remaining",
+        answers: [
+          "Exploiting software vulnerabilities.",
+          "Using strong encryption methods.",
+          "Creating a sense of urgency or fear to pressure victims.",
+          "Implementing multi-factor authentication."
+        ],
+        correctAnswer: 2
+      },
+      {
+        question: "14. Multi-factor authentication (MFA) is an additional layer of security that requires: 1 remaining",
+        answers: [
+          "Only a strong password.",
+          "Either a password or a fingerprint scan.",
+          "Both a password and a unique code sent to your phone.",
+          "Answering a series of personal security questions."
+        ],
+        correctAnswer: 2
+      },
+      {
+        question: "15. How can individuals stay informed about the latest cybersecurity threats? 0 remaining",
+        answers: [
+          "Clicking on links in unknown emails.",
+          "Following reputable cybersecurity resources online.",
+          "Downloading software from untrusted sources.",
+          "Sharing personal information on public social media profiles."
         ],
         correctAnswer: 1
       },
@@ -71,7 +155,7 @@ const questions = [
   
   let currentQuestion = 0;
   let score = 0;
-  let temporaryUsername = "Guest"; // Define a temporary username
+  let temporaryUsername = "Trainee"; // Define a temporary username
   
   function displayQuestion() {
     const questionElement = document.getElementById("question");
@@ -127,7 +211,7 @@ const questions = [
   function displayUsername() {
     const usernameElement = document.getElementById("username-display");
     if (usernameElement) {
-      usernameElement.textContent = "Welcome, " + temporaryUsername;
+      usernameElement.textContent = "Welcome to Week (I) Test, " + temporaryUsername;
     }
   }
   
